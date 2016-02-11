@@ -3,6 +3,7 @@ def bubble_sort(nums_array)
   sorted = nums_array.clone
   ready = false
   until ready do
-
+    i = 0
+    ready = true
   end
 end
