@@ -6,7 +6,9 @@ def bubble_sort(nums_array)
     i = 0
     ready = true
     while i < arr_len do
-      
+      if sorted[i] > sorted[i+1]
+        
+      end 
     end
   end
 end
