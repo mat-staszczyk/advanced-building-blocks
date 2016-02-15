@@ -7,7 +7,7 @@ def bubble_sort(nums_array)
     ready = true
     while i < arr_len do
       if sorted[i] > sorted[i+1]
-        
+        sorted[i], sorted[i+1] = sorted[i+1], sorted[i]
         ready = fasle        
       end 
       i += 1
