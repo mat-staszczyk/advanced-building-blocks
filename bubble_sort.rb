@@ -13,4 +13,5 @@ def bubble_sort(nums_array)
       i += 1
     end
   end
+  sorted
 end
