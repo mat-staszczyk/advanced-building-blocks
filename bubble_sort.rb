@@ -15,3 +15,7 @@ def bubble_sort(nums_array)
   end
   sorted
 end
+
+def bubble_sort_by(array)
+
+end
