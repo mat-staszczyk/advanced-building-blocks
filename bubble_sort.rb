@@ -17,5 +17,6 @@ def bubble_sort(nums_array)
 end
 
 def bubble_sort_by(array)
-
+  arr_len = array.size - 1
+  sorted = array.clone
 end
