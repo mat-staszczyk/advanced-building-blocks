@@ -21,6 +21,6 @@ def bubble_sort_by(array)
   sorted = array.clone
   ready = false
   until ready do
-
+    i = 0
   end
 end
