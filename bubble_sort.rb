@@ -22,5 +22,6 @@ def bubble_sort_by(array)
   ready = false
   until ready do
     i = 0
+    ready = true
   end
 end
