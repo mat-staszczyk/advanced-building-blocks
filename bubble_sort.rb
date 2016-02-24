@@ -23,5 +23,8 @@ def bubble_sort_by(array)
   until ready do
     i = 0
     ready = true
+    while i < arr_len do
+
+    end
   end
 end
