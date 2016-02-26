@@ -25,6 +25,7 @@ def bubble_sort_by(array)
     ready = true
     while i < arr_len do
       if yield(sorted[i], sorted[i+1]) > 0
+        sorted[i], sorted[i+1] = sorted[i+1], sorted[i]
 
       end
 
