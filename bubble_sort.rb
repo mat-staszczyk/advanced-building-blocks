@@ -28,7 +28,7 @@ def bubble_sort_by(array)
         sorted[i], sorted[i+1] = sorted[i+1], sorted[i]
         ready = false
       end
-
+      i += 1
     end
   end
 end
