@@ -31,4 +31,5 @@ def bubble_sort_by(array)
       i += 1
     end
   end
+  sorted
 end
