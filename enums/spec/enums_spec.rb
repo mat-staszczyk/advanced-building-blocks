@@ -11,6 +11,11 @@ describe 'enums' do
       @test_array.my_each { |i| @result << i**2 }
       expect(@result).to eq ([1,81,4,25,49,9,25])
     end 
+
+    it 'returns self in block given' do
+      @result = @test_array.my_each
+      expect(@result).to eq(@test_array)
+    end
   end
 
 
