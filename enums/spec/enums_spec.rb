@@ -18,6 +18,13 @@ describe 'enums' do
     end
   end
 
+  describe 'my_each_with_index method' do
+    it 'returns values with index in array of pairs' do
+      @test_array.my_each_with_index { |val,i| @result << [i, val] }
+      expect(@result).to eq([[0,1],[1,9],[2,2],[3,5],[4,7],[5,3],[6,5]])
+    end
+  end
+
 
 
 end
