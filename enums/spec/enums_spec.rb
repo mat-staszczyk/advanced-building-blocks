@@ -23,8 +23,13 @@ describe 'enums' do
       @test_array.my_each_with_index { |val,i| @result << [i, val] }
       expect(@result).to eq([[0,1],[1,9],[2,2],[3,5],[4,7],[5,3],[6,5]])
     end
+
+    it 'returns self if no block given' do
+      @result = @test_array.my_each_with_index
+      expect(@result).to eq(@test_array)
+    end
   end
 
-
+  
 
 end
