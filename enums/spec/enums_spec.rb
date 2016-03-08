@@ -30,6 +30,11 @@ describe 'enums' do
     end
   end
 
-  
+  describe 'my_select method' do
+    it 'returns only even values' do
+      @result = @test_array.my_select { |x| x.even? }
+      expect(@result).to eq([2])
+    end
+  end  
 
 end
