@@ -35,6 +35,11 @@ describe 'enums' do
       @result = @test_array.my_select { |x| x.even? }
       expect(@result).to eq([2])
     end
+
+    it 'returns only odd values' do
+      @result = @test_array.my_select { |x| x.odd? }
+      expect(@result).to eq([1,9,5,7,3,5])
+    end
   end  
 
 end
