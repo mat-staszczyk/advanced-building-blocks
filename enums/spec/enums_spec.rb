@@ -40,6 +40,11 @@ describe 'enums' do
       @result = @test_array.my_select { |x| x.odd? }
       expect(@result).to eq([1,9,5,7,3,5])
     end
+
+    it 'returs self if no block given' do
+      @result = @test_array.my_select
+      expect(@result).to eq(@test_array)
+    end
   end  
 
 end
