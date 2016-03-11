@@ -47,4 +47,8 @@ describe 'enums' do
     end
   end  
 
+  describe 'my_all? method' do 
+
+  end
+
 end
