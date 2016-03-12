@@ -48,7 +48,10 @@ describe 'enums' do
   end  
 
   describe 'my_all? method' do 
-
+    it 'checks if elements are integers' do
+      @result = @test_array.my_all? { |x| x.is_a? Integer }
+      expect(@result).to be true
+    end
   end
 
 end
