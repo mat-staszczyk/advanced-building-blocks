@@ -52,6 +52,11 @@ describe 'enums' do
       @result = @test_array.my_all? { |x| x.is_a? Integer }
       expect(@result).to be true
     end
+    
+    it 'checks if elements are odd' do
+      @result = @test_array.my_all? { |x| x.odd? }
+      expect(@result).to be false
+    end
   end
 
 end
