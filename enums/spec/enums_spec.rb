@@ -57,6 +57,10 @@ describe 'enums' do
       @result = @test_array.my_all? { |x| x.odd? }
       expect(@result).to be false
     end
+
+    it 'returns true if no block is given' do
+      expect(@test_array.my_all?).to be true
+    end
   end
 
 end
