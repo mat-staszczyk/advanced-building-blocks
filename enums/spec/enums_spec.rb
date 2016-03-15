@@ -63,4 +63,8 @@ describe 'enums' do
     end
   end
 
+  describe 'my_any? method' do
+
+  end
+
 end
