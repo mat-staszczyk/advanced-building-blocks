@@ -64,7 +64,10 @@ describe 'enums' do
   end
 
   describe 'my_any? method' do
-
+    it 'checks if any element is a string' do
+      @result = @test_array.my_any? { |x| x.is_a? String }
+      expect(@test_array.my_any?).to be true
+    end
   end
 
 end
