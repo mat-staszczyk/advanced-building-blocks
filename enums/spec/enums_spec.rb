@@ -68,6 +68,10 @@ describe 'enums' do
       @result = @test_array.my_any? { |x| x.is_a? String }
       expect(@test_array.my_any?).to be true
     end
+
+    it 'returns true if no block is given' do
+      expect(@test_array.my_any?).to be true
+    end
   end
 
 end
