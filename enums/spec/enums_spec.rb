@@ -74,4 +74,8 @@ describe 'enums' do
     end
   end
 
+  describe 'my_none? method' do
+
+  end
+
 end
