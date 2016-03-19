@@ -75,7 +75,10 @@ describe 'enums' do
   end
 
   describe 'my_none? method' do
-
+    it 'checks if none of elements are integers' do
+      @result = @test_array.my_none? { |x| x.is_a? String }
+      expect(@result).to be true
+    end
   end
 
 end
