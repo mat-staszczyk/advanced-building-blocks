@@ -79,6 +79,11 @@ describe 'enums' do
       @result = @test_array.my_none? { |x| x.is_a? String }
       expect(@result).to be true
     end
+
+    it 'checks if none of elements are even' do
+      @result = @test_array.my_none? { |x| x.even? }
+      expect(@result).to be false
+    end
   end
 
 end
