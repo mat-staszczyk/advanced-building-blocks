@@ -6,11 +6,11 @@ describe 'enums' do
     @result = Array.new
   end
 
-  describe 'my_each method' do 
+  describe 'my_each method' do
     it 'squares each element of array' do
       @test_array.my_each { |i| @result << i**2 }
       expect(@result).to eq ([1,81,4,25,49,9,25])
-    end 
+    end
 
     it 'returns self in block given' do
       @result = @test_array.my_each
@@ -45,14 +45,14 @@ describe 'enums' do
       @result = @test_array.my_select
       expect(@result).to eq(@test_array)
     end
-  end  
+  end
 
-  describe 'my_all? method' do 
+  describe 'my_all? method' do
     it 'checks if elements are integers' do
       @result = @test_array.my_all? { |x| x.is_a? Integer }
       expect(@result).to be true
     end
-    
+
     it 'checks if elements are odd' do
       @result = @test_array.my_all? { |x| x.odd? }
       expect(@result).to be false
@@ -83,6 +83,10 @@ describe 'enums' do
     it 'checks if none of elements are even' do
       @result = @test_array.my_none? { |x| x.even? }
       expect(@result).to be false
+    end
+
+    it 'returns false if no block given' do
+      expect(@test_array.my_none?).to be false
     end
   end
 
