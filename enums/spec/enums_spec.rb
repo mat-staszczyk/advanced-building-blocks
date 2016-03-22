@@ -90,4 +90,8 @@ describe 'enums' do
     end
   end
 
+  describe 'my_count method' do
+
+  end
+
 end
