@@ -91,7 +91,9 @@ describe 'enums' do
   end
 
   describe 'my_count method' do
-
+    it 'returns number of array element if no block given' do
+      expect(@test_array.my_count).to eq(7)
+    end
   end
 
 end
