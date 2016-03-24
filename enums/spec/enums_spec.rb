@@ -94,6 +94,11 @@ describe 'enums' do
     it 'returns number of array element if no block given' do
       expect(@test_array.my_count).to eq(7)
     end
+
+    it 'returns number of evens' do
+      @result = @test_array.my_count { |x| x.even? }
+      expect(@result).to eq(1)
+    end
   end
 
 end
