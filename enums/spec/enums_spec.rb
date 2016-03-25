@@ -101,4 +101,11 @@ describe 'enums' do
     end
   end
 
+  describe 'my_map method' do
+    it 'returns array of multiplied numbers' do
+      @result = @test_array.my_map { |x| x*x }
+      expect(@result).to eq([1,81,4,25,49,9,25])
+    end
+  end
+
 end
